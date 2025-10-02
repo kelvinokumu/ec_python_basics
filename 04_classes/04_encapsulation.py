@@ -7,13 +7,16 @@ class Bank:
         
     def set_balance(self, balance):
         self.__balance += balance
-        self.__balance = self.__balance + balance
+        # self.__balance = self.__balance + balance
         
-        
-        
-        
-b = Bank(10,"Tej")
-print(b.__balance)
+    def get_balance(self):
+        return self.__balance
+
+b = Bank(10,"Tej") #create an instance of the class
+# print(b.__balance) # private variables used through the object
 print(b.name)
+print(b.set_balance(5000))
+print(b.get_balance())
+
         
         
